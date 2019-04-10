@@ -1,6 +1,7 @@
 import unittest
 import Test_Carlos_PuertoG
 import Test2_Carlos_PuertoG
+import Edwin
 
 class Test_ejemplo(unittest.TestCase):
     def test_suma(self):
@@ -13,6 +14,12 @@ class Test_multiplicacion(unittest.TestCase):
     def test_multl(self):
         result=Test2_Carlos_PuertoG.multiplicacion(5,3)
         self.assertEqual(result,15)
+
+
+class Test_cuadrado(unittest.TestCase):
+    def test_cuadrado2(self):
+        result=Edwin.cuadrado2(5)
+        self.assertEqual(result,25)        
 
         
 
