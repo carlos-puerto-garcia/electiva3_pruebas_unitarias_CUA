@@ -4,6 +4,7 @@ import Test2_Carlos_PuertoG
 import Edwin
 import Cardenas
 import Ejemplo
+import Testni
 
 class Test_ejemplo(unittest.TestCase):
     def test_suma(self):
@@ -40,6 +41,11 @@ class PruebasMetodosCadenas(unittest.TestCase):
     def test_isupper(self):
         self.assertTrue('CASA'.isupper(),print("true"))
 #Trabajo de Jhon Darwin Acevedo
+class Test_false (unittest.TestCase):
+    def testtype (self):
+        result = Testni.Verificarnombres()
+        self.assertFalse(result, False)
+        #Trabajo de Brehider
 
 if __name__== '__main__':
     unittest.main()
