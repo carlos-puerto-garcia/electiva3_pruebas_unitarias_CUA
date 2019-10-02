@@ -4,6 +4,7 @@ import Test2_Carlos_PuertoG
 import Edwin
 import Cardenas
 import Ejemplo
+import Testni
 
 class Test_ejemplo(unittest.TestCase):
     def test_suma(self):
@@ -33,6 +34,15 @@ class Test_operacion (unittest.TestCase):
         self.assertIs (result,True)
         
 #Trabajo de Larry Alvarez Rodriguez
+        
+class Test_false (unittest.TestCase):
+    #Trabajo de Brehider 
+    def testtype (self):
+        result = Testni.Verificarnombres()
+        self.assertFalse(result, False)
+
+if __name__=='__main__':
+ unittest.main() 
 
 if __name__== '__main__':
     unittest.main()
