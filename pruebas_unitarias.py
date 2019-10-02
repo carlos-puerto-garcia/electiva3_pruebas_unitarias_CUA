@@ -3,6 +3,7 @@ import Test_Carlos_PuertoG
 import Test2_Carlos_PuertoG
 import Edwin
 import Cardenas
+import Ejemplo
 
 class Test_ejemplo(unittest.TestCase):
     def test_suma(self):
@@ -16,7 +17,6 @@ class Test_multiplicacion(unittest.TestCase):
         result=Test2_Carlos_PuertoG.multiplicacion(5,3)
         self.assertEqual(result,15)
 
-
 class Test_cuadrado(unittest.TestCase):
     def test_cuadrado2(self):
         result=Edwin.cuadrado2(5)
@@ -27,7 +27,12 @@ class Test(unittest.TestCase):
         result=Cardenas.sumaprogre(5)
         self.assertEqual(result,15)
        
-
+class Test_operacion (unittest.TestCase):
+    def testtype (self):
+        result = Ejemplo.hola()
+        self.assertIs (result,True)
+        
+#Trabajo de Larry Alvarez Rodriguez
 
 if __name__== '__main__':
     unittest.main()
