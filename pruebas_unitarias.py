@@ -33,6 +33,13 @@ class Test_operacion (unittest.TestCase):
         self.assertIs (result,True)
         
 #Trabajo de Larry Alvarez Rodriguez
+class PruebasMetodosCadenas(unittest.TestCase):
+    def test_upper(self):
+        self.assertEqual('casa'.upper(), 'CASA')
+
+    def test_isupper(self):
+        self.assertTrue('CASA'.isupper(),print("true"))
+#Trabajo de Jhon Darwin Acevedo
 
 if __name__== '__main__':
     unittest.main()
