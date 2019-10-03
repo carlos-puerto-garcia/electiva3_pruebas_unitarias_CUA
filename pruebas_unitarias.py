@@ -66,6 +66,14 @@ class Test_funcion (unittest.TestCase):
         result= Frank.multiplicar(3,5)
         self.assertIsNot(result,16)
 #Trabajo de Frank Ortiz
+
+class prueba(unittest.TestCase):
+
+    def test_string(self):
+        self.assertEqual('a'.upper(), 'A')
+
+    def test_isupper(self):
+         self.assertFalse('a'.isupper(), 'A')        
         
 if __name__== '__main__':
     unittest.main()
