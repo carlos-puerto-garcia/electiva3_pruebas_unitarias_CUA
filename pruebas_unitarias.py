@@ -6,6 +6,7 @@ import Cardenas
 import Ejemplo
 import Testni
 import Ballesteros
+import Frank
 
 class Test_ejemplo(unittest.TestCase):
     def test_suma(self):
@@ -54,6 +55,12 @@ class TestAssertIn (unittest.TestCase):
         numero = input("Ingrese el número para verificar su existencia:")
         self.assertIn(numero, lista)
 
+class Test_funcion (unittest.TestCase):
+    def test_multiplicacion(self):
+        result= Frank.multiplicar(3,5)
+        self.assertIsNot(result,16)
+#Trabajo de Frank Ortiz
+        
 if __name__== '__main__':
     unittest.main()
 
