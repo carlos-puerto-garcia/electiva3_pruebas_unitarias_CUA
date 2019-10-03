@@ -9,6 +9,7 @@ import Ballesteros
 import Comparacion
 import Frank
 import Yohan
+import MetodoCadenaSergio
 
 class Test_ejemplo(unittest.TestCase):
     def test_suma(self):
@@ -73,10 +74,20 @@ def add(x,y):
 
 class Testing(unittest.TestCase):
     def test(self):
-        result = Yohan.add(3,8)
+        result = Yohan.add(3,7)
         self.assertNotEqual(result, 11)
 
-#Yohan valencia        
+#Yohan valencia
+
+#Sergio Carvajal
+class TestStringMethods(unittest.TestCase):
+    def test_isupper(self):
+        numero = MetodoCadenaSergio.RetornarNumero()
+        letra = MetodoCadenaSergio.Retornarletra()
+        
+        self.assertTrue(numero.isdigit())
+        self.assertFalse(letra.isdigit())
+        
 if __name__== '__main__':
     unittest.main()
 
