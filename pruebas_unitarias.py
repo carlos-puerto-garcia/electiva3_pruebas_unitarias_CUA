@@ -69,6 +69,16 @@ class Test_funcion (unittest.TestCase):
         self.assertIsNot(result,16)
 #Trabajo de Frank Ortiz
 
+
+class prueba(unittest.TestCase):
+
+    def test_string(self):
+        self.assertEqual('a'.upper(), 'A')
+
+    def test_isupper(self):
+         self.assertFalse('a'.isupper(), 'A')        
+        
+
 def add(x,y):
     return x + y
 
@@ -88,6 +98,10 @@ class TestStringMethods(unittest.TestCase):
         self.assertTrue(numero.isdigit())
         self.assertFalse(letra.isdigit())
         
+
+#Yohan valencia        
+
+
 if __name__== '__main__':
     unittest.main()
 
