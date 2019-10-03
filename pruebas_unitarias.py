@@ -8,6 +8,7 @@ import Testni
 import Ballesteros
 import Comparacion
 import Frank
+import Yohan
 
 class Test_ejemplo(unittest.TestCase):
     def test_suma(self):
@@ -66,7 +67,16 @@ class Test_funcion (unittest.TestCase):
         result= Frank.multiplicar(3,5)
         self.assertIsNot(result,16)
 #Trabajo de Frank Ortiz
-        
+
+def add(x,y):
+    return x + y
+
+class Testing(unittest.TestCase):
+    def test(self):
+        result = Yohan.add(3,8)
+        self.assertNotEqual(result, 11)
+
+#Yohan valencia        
 if __name__== '__main__':
     unittest.main()
 
