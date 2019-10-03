@@ -6,6 +6,7 @@ import Cardenas
 import Ejemplo
 import Testni
 import Ballesteros
+import Comparacion
 
 class Test_ejemplo(unittest.TestCase):
     def test_suma(self):
@@ -48,11 +49,16 @@ class Test_false (unittest.TestCase):
         self.assertFalse(result, False)
         #Trabajo de Brehider
 
-class TestAssertIn (unittest.TestCase):
+'''class TestAssertIn (unittest.TestCase):
     def test_verificar_lista(self):
         lista = Ballesteros.IngresarLista()
         numero = input("Ingrese el número para verificar su existencia:")
         self.assertIn(numero, lista)
+'''
+class PruebasFunciones(unittest.TestCase):
+    def test_Comparacion(self):
+        result= Comparacion.comparaciontest("Hola_Mundo")
+        self.assertIs("Hola_Mundo",result)
 
 if __name__== '__main__':
     unittest.main()
