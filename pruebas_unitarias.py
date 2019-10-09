@@ -99,7 +99,21 @@ class TestStringMethods(unittest.TestCase):
         self.assertFalse(letra.isdigit())
         
 
-#Yohan valencia        
+#Yohan valencia
+
+#Yhorkman
+class Prueba(unittest.TestCase):
+    def test_string(self):
+        a = "yhorkman"
+        b = "yhork"
+        self.assertIsNot(a, b)
+
+    def test(self):
+        a = "5"
+        b = "4"
+        self.assertIsNot(a,b)
+#Yhorkman        
+        
 
 
 if __name__== '__main__':
