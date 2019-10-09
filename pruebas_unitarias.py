@@ -114,7 +114,12 @@ class Prueba(unittest.TestCase):
         self.assertIsNot(a,b)
 #Yhorkman        
         
-
+#yhork
+class Prueba(unittest.TestCase):
+    def test_string(self):
+        a = "yhorkman"
+        b = "yhork"
+        self.assertIsNot(a, b)        
 
 if __name__== '__main__':
     unittest.main()
